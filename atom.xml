@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>my web site</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://mjx-dev.github.io/"/>
+  <updated>2019-08-01T07:43:11.370Z</updated>
+  <id>https://mjx-dev.github.io/</id>
+  
+  <author>
+    <name>mjx</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://mjx-dev.github.io/2019/07/30/hello-world/"/>
+    <id>https://mjx-dev.github.io/2019/07/30/hello-world/</id>
+    <published>2019-07-30T08:45:30.437Z</published>
+    <updated>2019-08-01T07:43:11.370Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world"></a>Hello world</h1><h2 id="Hello-world-1"><a href="#Hello-world-1" class="headerlink" title="Hello world"></a>Hello world</h2><h3 id="Hello-world-2"><a href="#Hello-world-2" class="headerlink" title="Hello world"></a>Hello world</h3><h4 id="Hello-world-3"><a href="#Hello-world-3" class="headerlink" title="Hello world"></a>Hello world</h4><p>Hello world</p>[index](https://mjx-dev.github.io/ "index")]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hello-world&quot;&gt;&lt;a href=&quot;#Hello-world&quot; class=&quot;headerlink&quot; title=&quot;Hello world&quot;&gt;&lt;/a&gt;Hello world&lt;/h1&gt;&lt;h2 id=&quot;Hello-world-1&quot;&gt;&lt;a href=&quot;#Hell
+      
+    
+    </summary>
+    
+    
+      <category term="hello world" scheme="https://mjx-dev.github.io/tags/hello-world/"/>
+    
+  </entry>
+  
+</feed>
