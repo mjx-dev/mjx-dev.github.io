@@ -548,7 +548,7 @@
             <section class='widget plain'>
   
 <header class='pure'>
-  <div><i class=" fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;地图</div>
+  <div><i class="fas fa-globe fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;访客地球</div>
   
 </header>
 
@@ -641,13 +641,11 @@
         mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
         seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
         snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
         document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
     } 
     setInterval("createtime()",250);
   </script>
-  <i class="fas fa-chart-area"></i>
-  <span class="post-count">字数统计：13</span>
 </footer>
 <script>setLoadingBarProgress(80);</script>
 
