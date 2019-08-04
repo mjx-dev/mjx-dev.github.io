@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mjx-dev.github.io/"/>
-  <updated>2019-08-01T07:43:11.370Z</updated>
+  <updated>2019-08-03T10:51:36.084Z</updated>
   <id>https://mjx-dev.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用hexo和github pages创建自己的博客</title>
+    <link href="https://mjx-dev.github.io/2019/08/03/1_create_hexo_blog/"/>
+    <id>https://mjx-dev.github.io/2019/08/03/1_create_hexo_blog/</id>
+    <published>2019-08-03T06:42:01.879Z</published>
+    <updated>2019-08-03T10:51:36.084Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="安装NodeJs"><a href="#安装NodeJs" class="headerlink" title="安装NodeJs"></a>安装NodeJs</h3><p>打开<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">nodejs官网下载页面</a>下载对应的安装包(windows用户选Windows Installer(.msi))</p><p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets/website/img/blog/1_nodejs_download_page.png"></p><p>一路点击"Next",最后点"Finish"完成安装</p><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><h3 id="检验安装"><a href="#检验安装" class="headerlink" title="检验安装"></a>检验安装</h3><p>打开cmd输入以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p>如果安装成功，将会输出版本信息，如图：</p><p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets/website/img/blog/1_cmd_check.png"></p><h3 id="创建根目录-amp-安装插件"><a href="#创建根目录-amp-安装插件" class="headerlink" title="创建根目录&amp;安装插件"></a>创建根目录&amp;安装插件</h3><p>选择合适位置创建根目录(如C:\blog)，进入根目录，先点击右键，再点击"Git Bash Here"</p><p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets/website/img/blog/1_gitbash.png"></p><p>打开命令行后，</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;配置环境&quot;&gt;&lt;a href=&quot;#配置环境&quot; class=&quot;headerlink&quot; title=&quot;配置环境&quot;&gt;&lt;/a&gt;配置环境&lt;/h2&gt;&lt;h3 id=&quot;安装NodeJs&quot;&gt;&lt;a href=&quot;#安装NodeJs&quot; class=&quot;headerlink&quot; title=&quot;安
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://mjx-dev.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
