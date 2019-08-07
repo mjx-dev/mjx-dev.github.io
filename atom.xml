@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mjx-dev.github.io/"/>
-  <updated>2019-08-06T06:44:15.319Z</updated>
+  <updated>2019-08-07T07:34:01.269Z</updated>
   <id>https://mjx-dev.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用github+jsdelivr搭建免费的cdn</title>
+    <link href="https://mjx-dev.github.io/2019/08/07/2-github-jsdelivr-cdn/"/>
+    <id>https://mjx-dev.github.io/2019/08/07/2-github-jsdelivr-cdn/</id>
+    <published>2019-08-07T07:05:24.000Z</published>
+    <updated>2019-08-07T07:34:01.269Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="创建Github储存库"><a href="#创建Github储存库" class="headerlink" title="创建Github储存库"></a>创建Github储存库</h2><p>点击<a href="https://github.com/new" target="_blank" rel="noopener">链接</a>创建Github代码库</p><p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/blog/2-1.png" alt></p><h2 id="获取资源url"><a href="#获取资源url" class="headerlink" title="获取资源url"></a>获取资源url</h2><p>格式:(见下列中选一项填入你的信息即可)</p>- https://cdn.jsdelivr.net/gh/用户名/储存库名@release版本/文件(目录)- https://cdn.jsdelivr.net/gh/用户名/储存库名@分支名(如master)/文件(目录)- https://cdn.jsdelivr.net/gh/用户名/储存库名@commit编号(如图)/文件(目录)<p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/blog/2-3.png" alt></p><p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/blog/2-2.png" alt></p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>图片:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"url"</span>/&gt;</span></span><br></pre></td></tr></table></figure><p>js:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"url"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>css:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"url"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span>/&gt;</span></span><br></pre></td></tr></table></figure><p>超链接:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"url"</span>&gt;</span>name<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;创建Github储存库&quot;&gt;&lt;a href=&quot;#创建Github储存库&quot; class=&quot;headerlink&quot; title=&quot;创建Github储存库&quot;&gt;&lt;/a&gt;创建Github储存库&lt;/h2&gt;&lt;p&gt;点击&lt;a href=&quot;https://github.com/new&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="github" scheme="https://mjx-dev.github.io/tags/github/"/>
+    
+      <category term="jsdelivr" scheme="https://mjx-dev.github.io/tags/jsdelivr/"/>
+    
+      <category term="cdn" scheme="https://mjx-dev.github.io/tags/cdn/"/>
+    
+  </entry>
   
   <entry>
     <title>利用hexo和Github Pages创建自己的博客</title>
