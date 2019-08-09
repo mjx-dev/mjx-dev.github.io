@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://mjx-dev.github.io/tags/%E6%95%88%E6%9E%9C/</loc>
+        <lastmod>2019-08-08T08:20:52.834Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mjx-dev.github.io/tags/jquery/</loc>
+        <lastmod>2019-08-08T08:20:52.834Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://mjx-dev.github.io/tags/hexo/</loc>
         <lastmod>2019-08-07T10:33:06.038Z</lastmod>
         <changefreq>weekly</changefreq>
