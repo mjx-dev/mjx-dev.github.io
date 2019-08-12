@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mjx-dev.github.io/"/>
-  <updated>2019-08-09T07:17:02.026Z</updated>
+  <updated>2019-08-12T06:09:33.969Z</updated>
   <id>https://mjx-dev.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>处理github账号意外被误封</title>
+    <link href="https://mjx-dev.github.io/2019/08/12/4-github-flagged/"/>
+    <id>https://mjx-dev.github.io/2019/08/12/4-github-flagged/</id>
+    <published>2019-08-12T05:54:51.000Z</published>
+    <updated>2019-08-12T06:09:33.969Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一天晚上发现自己的github网站上有一行红字"you account has been flagged",可自己啥都没干啊!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;一天晚上发现自己的github网站上有一行红字&quot;you account has been flagged&quot;,可自己啥都没干啊!&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="github" scheme="https://mjx-dev.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>jquery效果(持续更新中)</title>
