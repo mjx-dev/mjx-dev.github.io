@@ -8,7 +8,7 @@
       <link href="/2019/08/08/3-jquery-effect/"/>
       <url>/2019/08/08/3-jquery-effect/</url>
       
-        <content type="html"><![CDATA[<h2 id="jquery安装"><a href="#jquery安装" class="headerlink" title="jquery安装"></a>jquery安装</h2><p>再使用jquery前,先要提及一下jquery的安装(大佬跳过)</p><p>主要分为两种类型,本地安装与云端(cdn)引用</p><h3 id="本地安装"><a href="#本地安装" class="headerlink" title="本地安装"></a>本地安装</h3><p>可以去<a href="https://jquery.com/download/" target="_blank" rel="noopener">jquery官网</a>下载相关文件</p><p>文件分为两种类型:</p><ul><li>Production version (用于实际应用,代码压缩)</li><li>Development version (用于开发和测试,代码可读)<p>下载下来可以放到js目录中</p><a id="more"></a>使用时把`html <script src="jquery-1.10.2.min.js"></script>`放到```<head><meta name="generator" content="Hexo 3.9.0">```和```</head>```标签之间</li></ul><h3 id="云端引用"><a href="#云端引用" class="headerlink" title="云端引用"></a>云端引用</h3><h2 id="隐藏-显示"><a href="#隐藏-显示" class="headerlink" title="隐藏/显示"></a>隐藏/显示</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="jquery安装"><a href="#jquery安装" class="headerlink" title="jquery安装"></a>jquery安装</h2><p>再使用jquery前,先要提及一下jquery的安装(大佬跳过)</p><p>主要分为两种类型,本地安装与云端(cdn)引用</p><h3 id="本地安装"><a href="#本地安装" class="headerlink" title="本地安装"></a>本地安装</h3><p>可以去<a href="https://jquery.com/download/" target="_blank" rel="noopener">jquery官网</a>下载相关文件</p><p>文件分为两种类型:</p><ul><li>Production version (用于实际应用,代码压缩)</li><li>Development version (用于开发和测试,代码可读)<p>下载下来可以放到js目录中</p><a id="more"></a>使用时把```html <script src="jquery-1.10.2.min.js"></script>```放到```<head><meta name="generator" content="Hexo 3.9.0">```和```</head>```标签之间</li></ul><h3 id="云端引用"><a href="#云端引用" class="headerlink" title="云端引用"></a>云端引用</h3><h2 id="隐藏-显示"><a href="#隐藏-显示" class="headerlink" title="隐藏/显示"></a>隐藏/显示</h2>]]></content>
       
       
       
