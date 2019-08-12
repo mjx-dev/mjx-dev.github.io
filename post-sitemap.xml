@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://mjx-dev.github.io/2019/07/30/hello-world/</loc>
+        <lastmod>2019-08-12T03:25:26.079Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mjx-dev.github.io/2019/08/08/3-jquery-effect/</loc>
         <lastmod>2019-08-09T07:17:02.026Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,14 +34,6 @@
     <url>
         <loc>https://mjx-dev.github.io/2019/08/07/2-github-jsdelivr-cdn/</loc>
         <lastmod>2019-08-07T10:09:54.060Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://mjx-dev.github.io/2019/07/30/hello-world/</loc>
-        <lastmod>2019-08-07T06:40:08.924Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
