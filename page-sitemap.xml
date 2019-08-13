@@ -2,55 +2,55 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://mjx-dev.github.io</loc>
+        <loc>https://mjx.js.org</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
     
     <url>
-        <loc>https://mjx-dev.github.io/tools/</loc>
+        <loc>https://mjx.js.org/tools/</loc>
         <lastmod>2019-08-08T07:35:13.188Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://mjx-dev.github.io/404.html</loc>
+        <loc>https://mjx.js.org/404.html</loc>
         <lastmod>2019-08-07T09:52:06.589Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://mjx-dev.github.io/about/</loc>
+        <loc>https://mjx.js.org/about/</loc>
         <lastmod>2019-08-07T06:41:26.729Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://mjx-dev.github.io/friends/</loc>
+        <loc>https://mjx.js.org/friends/</loc>
         <lastmod>2019-08-07T02:30:13.369Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://mjx-dev.github.io/mylist/</loc>
+        <loc>https://mjx.js.org/mylist/</loc>
         <lastmod>2019-07-31T05:52:17.257Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://mjx-dev.github.io/blog/tags/</loc>
+        <loc>https://mjx.js.org/blog/tags/</loc>
         <lastmod>2019-07-31T05:49:54.825Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://mjx-dev.github.io/blog/categories/</loc>
+        <loc>https://mjx.js.org/blog/categories/</loc>
         <lastmod>2019-07-31T05:48:14.966Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

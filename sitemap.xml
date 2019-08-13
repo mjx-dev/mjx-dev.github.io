@@ -3,22 +3,22 @@
 
 
     <sitemap>
-        <loc>https://mjx-dev.github.io/post-sitemap.xml</loc>
+        <loc>https://mjx.js.org/post-sitemap.xml</loc>
         <lastmod>2019-08-12T07:37:38.093Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>https://mjx-dev.github.io/page-sitemap.xml</loc>
+        <loc>https://mjx.js.org/page-sitemap.xml</loc>
         <lastmod>2019-08-08T07:35:13.188Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>https://mjx-dev.github.io/category-sitemap.xml</loc>
+        <loc>https://mjx.js.org/category-sitemap.xml</loc>
         <lastmod>2019-08-07T10:33:06.038Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>https://mjx-dev.github.io/tag-sitemap.xml</loc>
+        <loc>https://mjx.js.org/tag-sitemap.xml</loc>
         <lastmod>2019-08-12T07:37:38.093Z</lastmod>
     </sitemap>
 
