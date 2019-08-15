@@ -119,9 +119,9 @@
       <category term="web" scheme="https://mjx.js.org/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/web/"/>
     
     
-      <category term="hexo" scheme="https://mjx.js.org/tags/hexo/"/>
-    
       <category term="github" scheme="https://mjx.js.org/tags/github/"/>
+    
+      <category term="hexo" scheme="https://mjx.js.org/tags/hexo/"/>
     
   </entry>
   
