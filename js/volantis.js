@@ -343,7 +343,7 @@
         }
           , m = {
             cdn: "https://gravatar.loli.net/avatar/",
-            ds: ["mp", "identicon", "monsterid", "wavatar", "robohash", "retro", ""],
+            ds: ["mm", "identicon", "monsterid", "wavatar", "robohash", "retro", ""],
             params: "",
             hide: !1
         }
@@ -379,7 +379,7 @@
                         v.ip = e.ip
                     }
                 }
-                m.params = "?d=" + (_.indexOf(i) > -1 ? i : "mp") + "&v=" + o + A,
+                m.params = "?d=" + (_.indexOf(i) > -1 ? i : "mm")+ "&v=" + o + d,
                 m.hide = "hide" === i,
                 m.cdn = h.test(l) ? l : m.cdn,
                 y = e.path || y;

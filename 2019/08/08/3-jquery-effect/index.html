@@ -424,7 +424,10 @@
 <p>使用时把以下代码放到<b style="color:red">head标签</b>内</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery-1.10.2.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="云端引用"><a href="#云端引用" class="headerlink" title="云端引用"></a>云端引用</h3><p>大家也可以引用云上的文件,选一个CDN,并把代码放到<b style="color:red">head标签</b>内<br>Staticfile CDN:</p>
+<h3 id="云端引用"><a href="#云端引用" class="headerlink" title="云端引用"></a>云端引用</h3><p>大家也可以引用云上的文件,选一个CDN,并把代码放到<b style="color:red">head标签</b>内<br>官方 CDN:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://code.jquery.com/jquery-2.1.1.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Staticfile CDN:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>百度 CDN:</p>
@@ -436,7 +439,7 @@
 <p>新浪 CDN</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>Google CDN</p>
+<p>Google CDN(国内不稳定)</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>Microsoft CDN</p>
@@ -488,7 +491,7 @@ $("#show").click(function(){
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-08-14T18:50:13+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-08-14T18:55:26+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>最后更新于 2019年8月14日</p>
@@ -1163,7 +1166,9 @@ jquery安装再使用jquery前,先要提及一下jquery的安装(大佬跳过)�
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
-    <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-valine@1.3.4/js/valine.min.js"></script>
+    
+      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/js/volantis.min.js"></script>
+    
   
   <script>
   var GUEST_INFO = ['nick','mail','link'];
@@ -1183,7 +1188,7 @@ jquery安装再使用jquery前,先要提及一下jquery的安装(大佬跳过)�
     appKey: "VHVDp2bfjzMCVTHB9lV4iVkf",
     placeholder: "快来评论吧~",
     pageSize:'10',
-    avatar:'identicon',
+    avatar:'',
     lang:'zh-cn',
     highlight:'true'
   })
