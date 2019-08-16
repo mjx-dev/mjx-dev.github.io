@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://mjx.js.org/tools/</loc>
+        <lastmod>2019-08-16T07:12:13.333Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://mjx.js.org/res/</loc>
         <lastmod>2019-08-16T06:49:36.715Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -31,13 +38,6 @@
     <url>
         <loc>https://mjx.js.org/projects/</loc>
         <lastmod>2019-08-14T05:24:06.221Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://mjx.js.org/tools/</loc>
-        <lastmod>2019-08-08T07:35:13.188Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
