@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>关于 | mjx&#39;s blog</title>
+  <title>base64 | mjx&#39;s blog</title>
   
   <meta name="keywords" content="mjx,blog,技术分享,博客">
   
@@ -143,7 +143,7 @@
 
       
     </cover>
-    <header class="l_header no_sidebar pure">
+    <header class="l_header pure">
   <div id="loading-bar-wrapper">
     <div id="loading-bar" class="pure"></div>
   </div>
@@ -237,6 +237,8 @@
 			<ul class='switcher h-list'>
 				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
         
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
 			</ul>
 		</div>
 	</div>
@@ -321,7 +323,7 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
-      <div class='l_main no_sidebar'>
+      <div class='l_main'>
   
 
   
@@ -337,8 +339,8 @@
         
   
     <h1 class="title">
-      <a href="/about/index.html">
-        关于
+      <a href="/tools/base64.html">
+        base64
       </a>
     </h1>
   
@@ -367,7 +369,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-08-07</p>
+    <p>2019-08-16</p>
   </a>
 </div>
 
@@ -411,123 +413,30 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <h2 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h2><p>作者：mjx</p>
-<p>位置：地球</p>
-
-<p>欢迎光临本小站！</p>
-
-<h2 id="小站档案"><a href="#小站档案" class="headerlink" title="小站档案"></a>小站档案</h2><blockquote>
-<p>生日:2019-8-6-18:18:18<br>简介:一个小白分享技术的博客<br>位置:地球<br>作者:mjx<br>网址:<a href="https://mjx-dev.github.io" target="_blank" rel="noopener">https://mjx-dev.github.io</a></p>
-</blockquote>
+          <!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta charset="UTF-8">
+<title></title>
+<script src="js/core-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/enc-base64.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+var str = CryptoJS.enc.Utf8.parse("张");
+var base64 = CryptoJS.enc.Base64.stringify(str);
+var words = CryptoJS.enc.Base64.parse("5byg");
+var parseStr = words.toString(CryptoJS.enc.Utf8);
+alert(base64);
+</script>
+</head>
+<body>
+</body>
+</html>
 
         </div>
         
         
       </section>
     </article>
-  
-
-  
-    
-      
-    
-      
-    
-      
-        <section class='widget grid'>
-  
-<header class='pure'>
-  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
-  
-</header>
-
-  <div class='content pure'>
-    <ul class="grid navgation">
-      
-        <li><a class="flat-box" title="/" href="/"
-          
-          
-          id="home">
-          
-            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
-          
-          近期文章
-        </a></li>
-      
-        <li><a class="flat-box" title="/archives/" href="/archives/"
-          
-            rel="nofollow"
-          
-          
-          id="archives">
-          
-            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
-          
-          文章归档
-        </a></li>
-      
-        <li><a class="flat-box" title="/projects/" href="/projects/"
-          
-          
-          id="projects">
-          
-            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
-          
-          开源项目
-        </a></li>
-      
-        <li><a class="flat-box" title="/friends/" href="/friends/"
-          
-            rel="nofollow"
-          
-          
-          id="friends">
-          
-            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
-          
-          我的友链
-        </a></li>
-      
-        <li><a class="flat-box" title="/res/" href="/res/"
-          
-            rel="nofollow"
-          
-          
-          id="res">
-          
-            <i class="fas fa-cubes fa-fw" aria-hidden="true"></i>
-          
-          资源分享
-        </a></li>
-      
-        <li><a class="flat-box" title="/about/" href="/about/"
-          
-            rel="nofollow"
-          
-          
-          id="about">
-          
-            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
-          
-          关于小站
-        </a></li>
-      
-    </ul>
-  </div>
-</section>
-
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
   
 
   
@@ -1060,7 +969,7 @@
     
     appId: "PfF2OtnDuJwoozF7wgHYSmJD-MdYXbMMI",
     appKey: "VHVDp2bfjzMCVTHB9lV4iVkf",
-    placeholder: "有什么想对我说的呢？",
+    placeholder: "快来评论吧~",
     pageSize:'10',
     avatar:'',
     lang:'zh-cn',
