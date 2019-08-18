@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://mjx.js.org/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/</loc>
+        <lastmod>2019-08-18T07:16:23.033Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mjx.js.org/tags/hexo/</loc>
+        <lastmod>2019-08-18T07:16:23.033Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://mjx.js.org/tags/%E6%95%88%E6%9E%9C/</loc>
         <lastmod>2019-08-16T06:53:12.905Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -19,13 +33,6 @@
     <url>
         <loc>https://mjx.js.org/tags/github/</loc>
         <lastmod>2019-08-13T07:18:09.962Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mjx.js.org/tags/hexo/</loc>
-        <lastmod>2019-08-13T06:53:13.551Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

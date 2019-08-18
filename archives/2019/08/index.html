@@ -356,7 +356,7 @@
         
   <h2 class="title">
     <a href="/2019/08/18/5-welcome-ip/">
-      hexo制作欢迎词/个性化框框
+      hexo制作欢迎词/个性化签名档
     </a>
   </h2>
 
@@ -415,11 +415,26 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h2 id="制作代码"><a href="#制作代码" class="headerlink" title="制作代码"></a>制作代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> getOSAndBrowser=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">var</span> os=navigator.platform;<span class="keyword">var</span> userAgent=navigator.userAgent;<span class="keyword">var</span> info=<span class="string">""</span>;<span class="keyword">var</span> tempArray=<span class="string">""</span>;<span class="keyword">if</span>(os.indexOf(<span class="string">"Win"</span>)&gt;<span class="number">-1</span>)&#123;<span class="keyword">if</span>(userAgent.indexOf(<span class="string">"Windows NT 5.0"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"Win2000"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(userAgent.indexOf(<span class="string">"Windows NT 5.1"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"WinXP"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(userAgent.indexOf(<span class="string">"Windows NT 5.2"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"Win2003"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(userAgent.indexOf(<span class="string">"Windows NT 6.0"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"WindowsVista"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(userAgent.indexOf(<span class="string">"Windows NT 6.1"</span>)&gt;<span class="number">-1</span>||userAgent.indexOf(<span class="string">"Windows 7"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"Win7"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(userAgent.indexOf(<span class="string">"Windows NT 6.2"</span>)&gt;<span class="number">-1</span>||userAgent.indexOf(<span class="string">"Windows 8"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"Win8"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(userAgent.indexOf(<span class="string">"Windows NT 6.3"</span>)&gt;<span class="number">-1</span>||userAgent.indexOf(<span class="string">"Windows 8.1"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"Win8.1"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(userAgent.indexOf(<span class="string">"Windows NT 10.0"</span>)&gt;<span class="number">-1</span>||userAgent.indexOf(<span class="string">"Windows 10"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"Win10"</span>&#125;<span class="keyword">else</span>&#123;info+=<span class="string">"Other"</span>&#125;&#125;<span class="keyword">else</span> <span class="keyword">if</span>(os.indexOf(<span class="string">"Mac"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"Mac"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(os.indexOf(<span class="string">"X11"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"Unix"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(os.indexOf(<span class="string">"Linux"</span>)&gt;<span class="number">-1</span>)&#123;info+=<span class="string">"Linux"</span>&#125;<span class="keyword">else</span>&#123;info+=<span class="string">"Other"</span>&#125;info+=<span class="string">"/"</span>;<span class="keyword">var</span> isOpera=userAgent.indexOf(<span class="string">"Opera"</span>)&gt;<span class="number">-1</span>;<span class="keyword">var</span> isIE=userAgent.indexOf(<span class="string">"compatible"</span>)&gt;<span class="number">-1</span>&amp;&amp;userAgent.indexOf(<span class="string">"MSIE"</span>)&gt;<span class="number">-1</span>&amp;&amp;!isOpera;<span class="keyword">var</span> isEdge=userAgent.toLowerCase().indexOf(<span class="string">"edge"</span>)&gt;<span class="number">-1</span>&amp;&amp;!isIE;<span class="keyword">var</span> isIE11=(userAgent.toLowerCase().indexOf(<span class="string">"trident"</span>)&gt;<span class="number">-1</span>&amp;&amp;userAgent.indexOf(<span class="string">"rv"</span>)&gt;<span class="number">-1</span>);<span class="keyword">if</span>(<span class="regexp">/[Ff]irefox(\/\d+\.\d+)/</span>.test(userAgent))&#123;tempArray=<span class="regexp">/([Ff]irefox)\/(\d+\.\d+)/</span>.exec(userAgent);info+=tempArray[<span class="number">1</span>]+tempArray[<span class="number">2</span>]&#125;<span class="keyword">else</span> <span class="keyword">if</span>(isIE)&#123;<span class="keyword">var</span> version=<span class="string">""</span>;<span class="keyword">var</span> reIE=<span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"MSIE (\\d+\\.\\d+);"</span>);reIE.test(userAgent);<span class="keyword">var</span> fIEVersion=<span class="built_in">parseFloat</span>(<span class="built_in">RegExp</span>[<span class="string">"$1"</span>]);<span class="keyword">if</span>(fIEVersion==<span class="number">7</span>)&#123;version=<span class="string">"IE7"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(fIEVersion==<span class="number">8</span>)&#123;version=<span class="string">"IE8"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(fIEVersion==<span class="number">9</span>)&#123;version=<span class="string">"IE9"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(fIEVersion==<span class="number">10</span>)&#123;version=<span class="string">"IE10"</span>&#125;<span class="keyword">else</span>&#123;version=<span class="string">"0"</span>&#125;info+=version&#125;<span class="keyword">else</span> <span class="keyword">if</span>(isEdge)&#123;info+=<span class="string">"Edge"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(isIE11)&#123;info+=<span class="string">"IE11"</span>&#125;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="regexp">/[Cc]hrome\/\d+/</span>.test(userAgent))&#123;tempArray=<span class="regexp">/([Cc]hrome)\/(\d+)/</span>.exec(userAgent);info+=tempArray[<span class="number">1</span>]+tempArray[<span class="number">2</span>]&#125;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="regexp">/[Vv]ersion\/\d+\.\d+\.\d+(\.\d)* *[Ss]afari/</span>.test(userAgent))&#123;tempArray=<span class="regexp">/[Vv]ersion\/(\d+\.\d+\.\d+)(\.\d)* *([Ss]afari)/</span>.exec(userAgent);info+=tempArray[<span class="number">3</span>]+tempArray[<span class="number">1</span>]&#125;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="regexp">/[Oo]pera.+[Vv]ersion\/\d+\.\d+/</span>.test(userAgent))&#123;tempArray=<span class="regexp">/([Oo]pera).+[Vv]ersion\/(\d+)\.\d+/</span>.exec(userAgent);info+=tempArray[<span class="number">1</span>]+tempArray[<span class="number">2</span>]&#125;<span class="keyword">else</span>&#123;info+=<span class="string">"unknown"</span>&#125;<span class="keyword">return</span> info&#125;;<span class="built_in">document</span>.write(<span class="string">"欢迎,来自"</span>+returnCitySN[<span class="string">"cname"</span>]+<span class="string">"的朋友"</span>);<span class="built_in">document</span>.write(<span class="string">"&lt;br&gt;您的ip:"</span>+returnCitySN[<span class="string">"cip"</span>]);<span class="built_in">document</span>.write(<span class="string">"&lt;br&gt;您使用的是"</span>+getOSAndBrowser());</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
+      <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>现在网上流行一些个性化签名档,我查阅资料,自己在基础上改了一段代码,与大家分享(特别感谢搜狗的api),效果如下</p>
+<p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/blog/5-cover.png" alt="cover"></p>
+<h2 id="制作代码"><a href="#制作代码" class="headerlink" title="制作代码"></a>制作代码</h2><p>复制以下代码</p>
+      
+        <div class="readmore">
+          <a href="/2019/08/18/5-welcome-ip/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>hexo</a>
+        
+          <a href="/tags/个性化/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>个性化</a>
+        
+      </div>
     
   </section>
 </article>
@@ -976,25 +991,6 @@
 <header class='pure'>
   <div><i class="fas fa-handshake fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;欢迎~</div>
   
-</header>
-
-  <div class='content pure'>
-    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script>var getOSAndBrowser=function(){var os=navigator.platform;var userAgent=navigator.userAgent;var info="";var tempArray="";if(os.indexOf("Win")>-1){if(userAgent.indexOf("Windows NT 5.0")>-1){info+="Win2000"}else if(userAgent.indexOf("Windows NT 5.1")>-1){info+="WinXP"}else if(userAgent.indexOf("Windows NT 5.2")>-1){info+="Win2003"}else if(userAgent.indexOf("Windows NT 6.0")>-1){info+="WindowsVista"}else if(userAgent.indexOf("Windows NT 6.1")>-1||userAgent.indexOf("Windows 7")>-1){info+="Win7"}else if(userAgent.indexOf("Windows NT 6.2")>-1||userAgent.indexOf("Windows 8")>-1){info+="Win8"}else if(userAgent.indexOf("Windows NT 6.3")>-1||userAgent.indexOf("Windows 8.1")>-1){info+="Win8.1"}else if(userAgent.indexOf("Windows NT 10.0")>-1||userAgent.indexOf("Windows 10")>-1){info+="Win10"}else{info+="Other"}}else if(os.indexOf("Mac")>-1){info+="Mac"}else if(os.indexOf("X11")>-1){info+="Unix"}else if(os.indexOf("Linux")>-1){info+="Linux"}else{info+="Other"}info+="/";var isOpera=userAgent.indexOf("Opera")>-1;var isIE=userAgent.indexOf("compatible")>-1&&userAgent.indexOf("MSIE")>-1&&!isOpera;var isEdge=userAgent.toLowerCase().indexOf("edge")>-1&&!isIE;var isIE11=(userAgent.toLowerCase().indexOf("trident")>-1&&userAgent.indexOf("rv")>-1);if(/[Ff]irefox(\/\d+\.\d+)/.test(userAgent)){tempArray=/([Ff]irefox)\/(\d+\.\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else if(isIE){var version="";var reIE=new RegExp("MSIE (\\d+\\.\\d+);");reIE.test(userAgent);var fIEVersion=parseFloat(RegExp["$1"]);if(fIEVersion==7){version="IE7"}else if(fIEVersion==8){version="IE8"}else if(fIEVersion==9){version="IE9"}else if(fIEVersion==10){version="IE10"}else{version="0"}info+=version}else if(isEdge){info+="Edge"}else if(isIE11){info+="IE11"}else if(/[Cc]hrome\/\d+/.test(userAgent)){tempArray=/([Cc]hrome)\/(\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else if(/[Vv]ersion\/\d+\.\d+\.\d+(\.\d)* *[Ss]afari/.test(userAgent)){tempArray=/[Vv]ersion\/(\d+\.\d+\.\d+)(\.\d)* *([Ss]afari)/.exec(userAgent);info+=tempArray[3]+tempArray[1]}else if(/[Oo]pera.+[Vv]ersion\/\d+\.\d+/.test(userAgent)){tempArray=/([Oo]pera).+[Vv]ersion\/(\d+)\.\d+/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else{info+="unknown"}return info};document.write("欢迎,来自"+returnCitySN["cname"]+"的朋友");document.write("<br>您的ip:"+returnCitySN["cip"]);document.write("<br>您使用的是"+getOSAndBrowser());</script>
-  </div>
-</section>
-
-          
-        
-      
-        
-          
-          
-            
-  <section class='widget category'>
-    
-<header class='pure'>
-  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
-  
     <a class="rightBtn"
     
       rel="nofollow"
@@ -1006,17 +1002,10 @@
   
 </header>
 
-    <div class='content pure'>
-      <ul class="entry">
-        
-          <li><a class="flat-box" title="/categories/编程开发/" href="/categories/编程开发/"><div class='name'>编程开发</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child" title="/categories/编程开发/web/" href="/categories/编程开发/web/"><div class='name'>web</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
+  <div class='content pure'>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script>var getOSAndBrowser=function(){var os=navigator.platform;var userAgent=navigator.userAgent;var info="";var tempArray="";if(os.indexOf("Win")>-1){if(userAgent.indexOf("Windows NT 5.0")>-1){info+="Win2000"}else if(userAgent.indexOf("Windows NT 5.1")>-1){info+="WinXP"}else if(userAgent.indexOf("Windows NT 5.2")>-1){info+="Win2003"}else if(userAgent.indexOf("Windows NT 6.0")>-1){info+="WindowsVista"}else if(userAgent.indexOf("Windows NT 6.1")>-1||userAgent.indexOf("Windows 7")>-1){info+="Win7"}else if(userAgent.indexOf("Windows NT 6.2")>-1||userAgent.indexOf("Windows 8")>-1){info+="Win8"}else if(userAgent.indexOf("Windows NT 6.3")>-1||userAgent.indexOf("Windows 8.1")>-1){info+="Win8.1"}else if(userAgent.indexOf("Windows NT 10.0")>-1||userAgent.indexOf("Windows 10")>-1){info+="Win10"}else{info+="Other"}}else if(os.indexOf("Mac")>-1){info+="Mac"}else if(os.indexOf("X11")>-1){info+="Unix"}else if(os.indexOf("Linux")>-1){info+="Linux"}else{info+="Other"}info+="/";var isOpera=userAgent.indexOf("Opera")>-1;var isIE=userAgent.indexOf("compatible")>-1&&userAgent.indexOf("MSIE")>-1&&!isOpera;var isEdge=userAgent.toLowerCase().indexOf("edge")>-1&&!isIE;var isIE11=(userAgent.toLowerCase().indexOf("trident")>-1&&userAgent.indexOf("rv")>-1);if(/[Ff]irefox(\/\d+\.\d+)/.test(userAgent)){tempArray=/([Ff]irefox)\/(\d+\.\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else if(isIE){var version="";var reIE=new RegExp("MSIE (\\d+\\.\\d+);");reIE.test(userAgent);var fIEVersion=parseFloat(RegExp["$1"]);if(fIEVersion==7){version="IE7"}else if(fIEVersion==8){version="IE8"}else if(fIEVersion==9){version="IE9"}else if(fIEVersion==10){version="IE10"}else{version="0"}info+=version}else if(isEdge){info+="Edge"}else if(isIE11){info+="IE11"}else if(/[Cc]hrome\/\d+/.test(userAgent)){tempArray=/([Cc]hrome)\/(\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else if(/[Vv]ersion\/\d+\.\d+\.\d+(\.\d)* *[Ss]afari/.test(userAgent)){tempArray=/[Vv]ersion\/(\d+\.\d+\.\d+)(\.\d)* *([Ss]afari)/.exec(userAgent);info+=tempArray[3]+tempArray[1]}else if(/[Oo]pera.+[Vv]ersion\/\d+\.\d+/.test(userAgent)){tempArray=/([Oo]pera).+[Vv]ersion\/(\d+)\.\d+/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else{info+="unknown"}return info};document.write("热烈欢迎来自"+returnCitySN["cname"]+"的朋友");document.write("<br>您的 IP 是："+returnCitySN["cip"]);document.write("<br>您使用的是 "+getOSAndBrowser());</script>
+  </div>
+</section>
 
           
         
@@ -1042,7 +1031,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/cdn/" style="font-size: 14px; color: #999">cdn</a> <a href="/tags/github/" style="font-size: 24px; color: #555">github</a> <a href="/tags/hello-world/" style="font-size: 14px; color: #999">hello world</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/jquery/" style="font-size: 14px; color: #999">jquery</a> <a href="/tags/jsdelivr/" style="font-size: 14px; color: #999">jsdelivr</a> <a href="/tags/效果/" style="font-size: 14px; color: #999">效果</a>
+      <a href="/tags/cdn/" style="font-size: 14px; color: #999">cdn</a> <a href="/tags/github/" style="font-size: 24px; color: #555">github</a> <a href="/tags/hello-world/" style="font-size: 14px; color: #999">hello world</a> <a href="/tags/hexo/" style="font-size: 19px; color: #777">hexo</a> <a href="/tags/jquery/" style="font-size: 14px; color: #999">jquery</a> <a href="/tags/jsdelivr/" style="font-size: 14px; color: #999">jsdelivr</a> <a href="/tags/个性化/" style="font-size: 14px; color: #999">个性化</a> <a href="/tags/效果/" style="font-size: 14px; color: #999">效果</a>
     </div>
   </section>
 
