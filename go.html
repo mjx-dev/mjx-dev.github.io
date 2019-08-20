@@ -1,19 +1,16 @@
-<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1277926543&web_id=1277926543"></script>
 <script>
-
-    function getQueryVariable(variable) { 
-        window.onload = function() {
-              document.onkeydown = function() {
-                 var e = window.event || arguments[0];
-                 if(e.keyCode == 123) {
-                     return false;
-                 } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
-                     return false;
-                 } else if((e.shiftKey) && (e.keyCode == 121)){
-                     return false;
-                 } else if(event.ctrlKey  &&  window.event.keyCode==83 ){ 
-                     return false;
-                 } 
+    window.onload = function() {
+            document.onkeydown = function() {
+                var e = window.event || arguments[0];
+                if(e.keyCode == 123) {
+                    return false;
+                } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+                    return false;
+                } else if((e.shiftKey) && (e.keyCode == 121)){
+                    return false;
+                } else if(event.ctrlKey  &&window.event.keyCode==83 ){ 
+                    return false;
+                } 
              };
              document.oncontextmenu = function() {
                 return false;
@@ -23,8 +20,12 @@
                 oncopy='document.selection.empty()' 
                 onbeforecopy='return false' 
                 onmouseup='document.selection.empty()'
-             }
-         }
+            }
+        }
+</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277926543'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1277926543%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+<script>
+    function getQueryVariable(variable) { 
     var query = window.location.search.substring(1);
     var vars = query.split("&");
     for (var i=0;i<vars.length;i++) {
