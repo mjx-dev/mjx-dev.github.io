@@ -1,0 +1,38 @@
+<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1277926543&web_id=1277926543"></script>
+<script>
+
+    function getQueryVariable(variable) { 
+        window.onload = function() {
+              document.onkeydown = function() {
+                 var e = window.event || arguments[0];
+                 if(e.keyCode == 123) {
+                     return false;
+                 } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+                     return false;
+                 } else if((e.shiftKey) && (e.keyCode == 121)){
+                     return false;
+                 } else if(event.ctrlKey  &&  window.event.keyCode==83 ){ 
+                     return false;
+                 } 
+             };
+             document.oncontextmenu = function() {
+                return false;
+                ondragstart='return false' 
+                onselectstart ='return false' 
+                onselect='document.selection.empty()' 
+                oncopy='document.selection.empty()' 
+                onbeforecopy='return false' 
+                onmouseup='document.selection.empty()'
+             }
+         }
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){return pair[1];}
+    }
+    return '';
+    }
+    var url=getQueryVariable("url");
+    location.href=url;
+</script>
