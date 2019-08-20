@@ -648,7 +648,7 @@ document.write("<br>您使用的是"+getOSAndBrowser());
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/github/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>github</a> <a class="tag" href="/tags/hexo/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>hexo</a>
+                                    <a class="tag" href="/tags/hexo/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>hexo</a> <a class="tag" href="/tags/github/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>github</a>
                                 </h6>
                             
                         </span>
@@ -1204,15 +1204,15 @@ document.write("<br>您使用的是"+getOSAndBrowser());
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
-    notify: notify,
-    verify: verify,
+    notify: true,
+    verify: true,
     guest_info: guest_info,
     
     appId: "PfF2OtnDuJwoozF7wgHYSmJD-MdYXbMMI",
     appKey: "VHVDp2bfjzMCVTHB9lV4iVkf",
     placeholder: "test",
     pageSize:'10',
-    avatar:'',
+    avatar:'identicon',
     lang:'zh-cn',
     highlight:'true'
   })

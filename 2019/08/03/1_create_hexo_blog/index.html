@@ -563,7 +563,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/github/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>github</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/hexo/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>hexo</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/hexo/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/github/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>github</p></a></div>
 
 
         
@@ -1218,15 +1218,15 @@
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
-    notify: notify,
-    verify: verify,
+    notify: true,
+    verify: true,
     guest_info: guest_info,
     
     appId: "PfF2OtnDuJwoozF7wgHYSmJD-MdYXbMMI",
     appKey: "VHVDp2bfjzMCVTHB9lV4iVkf",
     placeholder: "快来评论吧~",
     pageSize:'10',
-    avatar:'',
+    avatar:'identicon',
     lang:'zh-cn',
     highlight:'true'
   })

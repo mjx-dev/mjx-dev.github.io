@@ -902,8 +902,8 @@
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
-    notify: notify,
-    verify: verify,
+    notify: true,
+    verify: true,
     guest_info: guest_info,
     
       path: "/404.html",
@@ -912,7 +912,7 @@
     appKey: "VHVDp2bfjzMCVTHB9lV4iVkf",
     placeholder: "请留言告诉我您要访问哪个页面找不到了",
     pageSize:'10',
-    avatar:'',
+    avatar:'identicon',
     lang:'zh-cn',
     highlight:'true'
   })

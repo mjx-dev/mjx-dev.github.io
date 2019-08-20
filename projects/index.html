@@ -965,15 +965,15 @@
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
-    notify: notify,
-    verify: verify,
+    notify: true,
+    verify: true,
     guest_info: guest_info,
     
     appId: "PfF2OtnDuJwoozF7wgHYSmJD-MdYXbMMI",
     appKey: "VHVDp2bfjzMCVTHB9lV4iVkf",
     placeholder: "快来评论吧~",
     pageSize:'10',
-    avatar:'',
+    avatar:'identicon',
     lang:'zh-cn',
     highlight:'true'
   })
