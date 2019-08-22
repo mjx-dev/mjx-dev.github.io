@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mjx.js.org/"/>
-  <updated>2019-08-21T13:20:55.587Z</updated>
+  <updated>2019-08-22T06:14:59.386Z</updated>
   <id>https://mjx.js.org/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>8_github_ban</title>
+    <title>github封禁了部分被制裁国家的用户</title>
     <link href="https://mjx.js.org/2019/08/21/8-github-ban/"/>
     <id>https://mjx.js.org/2019/08/21/8-github-ban/</id>
     <published>2019-08-21T11:22:32.000Z</published>
-    <updated>2019-08-21T13:20:55.587Z</updated>
+    <updated>2019-08-22T06:14:59.386Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/blog/8-cover.jpg" alt="cover"><br>注:图片来自github</p><a id="more"></a><p><strong>最近github封禁了部分被制裁国家的用户</strong></p><blockquote><p>现在程序猿也有了国界</p></blockquote><p>伊朗网友在github上发起了抗议→<a href="https://github.com/1995parham/github-do-not-ban-us" target="_blank" rel="noopener">项目</a></p><blockquote><p>GitHub 曾经是一个面向所有人的开放、自由的平台，但它现在却决定限制伊朗国籍的账户参与和成为开源生态系统的一部分。虽然我们理解 GitHub 可能是在美国政府的施压下作出此决定，但是我们希望 GitHub 实施更加尊重用户的举措。</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/blog/8-1.png" alt></p>]]></content>
     
@@ -206,9 +206,9 @@
       <category term="web" scheme="https://mjx.js.org/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/web/"/>
     
     
-      <category term="github" scheme="https://mjx.js.org/tags/github/"/>
-    
       <category term="hexo" scheme="https://mjx.js.org/tags/hexo/"/>
+    
+      <category term="github" scheme="https://mjx.js.org/tags/github/"/>
     
   </entry>
   
