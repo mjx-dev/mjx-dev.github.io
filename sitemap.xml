@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://mjx.js.org/2019/08/03/1_create_hexo_blog/</loc>
+    <lastmod>2019-08-23</lastmod>
+  </url>  <url>
     <loc>https://mjx.js.org/2019/08/21/8-github-ban/</loc>
     <lastmod>2019-08-22</lastmod>
   </url>  <url>
@@ -17,9 +20,6 @@
     <lastmod>2019-08-18</lastmod>
   </url>  <url>
     <loc>https://mjx.js.org/2019/08/12/4-github-flagged/</loc>
-    <lastmod>2019-08-13</lastmod>
-  </url>  <url>
-    <loc>https://mjx.js.org/2019/08/03/1_create_hexo_blog/</loc>
     <lastmod>2019-08-13</lastmod>
   </url>  <url>
     <loc>https://mjx.js.org/2019/07/30/hello-world/</loc>
