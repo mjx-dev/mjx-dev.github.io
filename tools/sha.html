@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>留言板 | mjx&#39;s blog</title>
+  <title>工具箱(beta) | mjx&#39;s blog</title>
   
   <meta name="keywords" content="mjx,blog,技术分享,博客">
   
@@ -374,8 +374,8 @@
         
   
     <h1 class="title">
-      <a href="/comments/index.html">
-        留言板
+      <a href="/tools/sha.html">
+        工具箱(beta)
       </a>
     </h1>
   
@@ -404,7 +404,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-08-19</p>
+    <p>2019-08-27</p>
   </a>
 </div>
 
@@ -448,18 +448,105 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <h2 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h2><blockquote>
-<p>采用 valine 评论系统,填写邮箱和昵称即可,搭配丰富表情,请尽情留言吧！</p>
-</blockquote>
-<blockquote>
-<p>也可以在此处投稿,好文章作者会添加哦~</p>
-</blockquote>
-<p><strong>注意:文明发言提问,请勿恶意刷评论,否则会当作垃圾评论处理!</strong></p>
-<center>
+          <style>
+    p {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    textarea.input {
+        position: relative;
+        left: 0%;
+        top: 0%;
+        margin: 0%;
+        height: 210px;
+        width: 720px;
+    }
+    textarea.output {
+        position: relative;
+        left: 0%;
+        top: auto;
+        margin: 0%;
+        height: 210px;
+        width: 720px;
+    }
+</style>
+<script>
+    function encodeUTF8(s) {
+  var i, r = [], c, x;
+  for (i = 0; i < s.length; i++)
+    if ((c = s.charCodeAt(i)) < 0x80) r.push(c);
+    else if (c < 0x800) r.push(0xC0 + (c >> 6 & 0x1F), 0x80 + (c & 0x3F));
+    else {
+      if ((x = c ^ 0xD800) >> 10 == 0) //对四字节UTF-16转换为Unicode
+        c = (x << 10) + (s.charCodeAt(++i) ^ 0xDC00) + 0x10000,
+          r.push(0xF0 + (c >> 18 & 0x7), 0x80 + (c >> 12 & 0x3F));
+      else r.push(0xE0 + (c >> 12 & 0xF));
+      r.push(0x80 + (c >> 6 & 0x3F), 0x80 + (c & 0x3F));
+    };
+  return r;
+}
+// 字符串加密成 hex 字符串
+function sha1(s) {
+  var data = new Uint8Array(encodeUTF8(s))
+  var i, j, t;
+  var l = ((data.length + 8) >>> 6 << 4) + 16, s = new Uint8Array(l << 2);
+  s.set(new Uint8Array(data.buffer)), s = new Uint32Array(s.buffer);
+  for (t = new DataView(s.buffer), i = 0; i < l; i++)s[i] = t.getUint32(i << 2);
+  s[data.length >> 2] |= 0x80 << (24 - (data.length & 3) * 8);
+  s[l - 1] = data.length << 3;
+  var w = [], f = [
+    function () { return m[1] & m[2] | ~m[1] & m[3]; },
+    function () { return m[1] ^ m[2] ^ m[3]; },
+    function () { return m[1] & m[2] | m[1] & m[3] | m[2] & m[3]; },
+    function () { return m[1] ^ m[2] ^ m[3]; }
+  ], rol = function (n, c) { return n << c | n >>> (32 - c); },
+    k = [1518500249, 1859775393, -1894007588, -899497514],
+    m = [1732584193, -271733879, null, null, -1009589776];
+  m[2] = ~m[0], m[3] = ~m[1];
+  for (i = 0; i < s.length; i += 16) {
+    var o = m.slice(0);
+    for (j = 0; j < 80; j++)
+      w[j] = j < 16 ? s[i + j] : rol(w[j - 3] ^ w[j - 8] ^ w[j - 14] ^ w[j - 16], 1),
+        t = rol(m[0], 5) + f[j / 20 | 0]() + m[4] + w[j] + k[j / 20 | 0] | 0,
+        m[1] = rol(m[1], 30), m.pop(), m.unshift(t);
+    for (j = 0; j < 5; j++)m[j] = m[j] + o[j] | 0;
+  };
+  t = new DataView(new Uint32Array(m).buffer);
+  for (var i = 0; i < 5; i++)m[i] = t.getUint32(i << 2);
+  var hex = Array.prototype.map.call(new Uint8Array(new Uint32Array(m).buffer), function (e) {
+    return (e < 16 ? "0" : "") + e.toString(16);
+  }).join("");
+  return hex;
+}
+</script>
+<p><textarea rows="3" cols="20" class="input" id="input" placeholder="在此输入你要加密的明文或要解密的密文"></textarea></p>
+<div>
+    <button onclick="javascript:enc(1)">sha1加密</button>
+    <button onclick="javascript:enc()"></button>
+    <button id="copybutton" class="btn" data-clipboard-target="#output">复制结果</button>
+</div>
+<textarea rows="3" cols="20" class="output" id="output" placeholder="这里会输出结果"></textarea>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    function enc(type) {
+        var text=document.getElementById("input").value;
+        if(type==1) {
+            document.getElementById("output").value=sha1(text);
+        }//else if(type==2)
+    }
+    var result=document.getElementById("output").value;
+    var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function(e) {
+        alert("复制成功");
+        e.clearSelection();
+    });
+    clipboard.on('error', function(e) {
+        alert("复制失败");
+        e.clearSelection();
+    });
+</script>
 
-<p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/comments_img.jpg" alt="留言互赞"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/logo.png" alt="logo"></p>
-</center>
+
         </div>
         
         
@@ -1003,7 +1090,7 @@
     
     appId: "PfF2OtnDuJwoozF7wgHYSmJD-MdYXbMMI",
     appKey: "VHVDp2bfjzMCVTHB9lV4iVkf",
-    placeholder: "还有空位哦,快来留言吧!",
+    placeholder: "快来评论吧~",
     pageSize:'10',
     avatar:'identicon',
     lang:'zh-cn',
