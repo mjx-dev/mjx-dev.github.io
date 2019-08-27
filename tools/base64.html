@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>base64 | mjx&#39;s blog</title>
+  <title>base64加密/解密 | mjx&#39;s blog</title>
   
   <meta name="keywords" content="mjx,blog,技术分享,博客">
   
@@ -139,13 +139,24 @@
           </a>
         </li>
       
+        <li>
+          <a class="nav home" href="/tools/"
+            
+              rel="nofollow"
+            
+            
+            id="tools">
+            <i class='fas fa-toolbox fa-fw'></i>&nbsp;工具箱(beta)
+          </a>
+        </li>
+      
     
   </ul>
 </div>
 
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header no_sidebar pure">
   <div id="loading-bar-wrapper">
     <div id="loading-bar" class="pure"></div>
   </div>
@@ -225,6 +236,17 @@
 								</a>
 							</li>
       			
+  						<li>
+								<a class="nav flat-box" href="/tools/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="tools">
+									<i class='fas fa-toolbox fa-fw'></i>&nbsp;工具箱(beta)
+								</a>
+							</li>
+      			
       		
 				</ul>
 			</div>
@@ -249,8 +271,6 @@
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
 				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
-        
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
         
 			</ul>
 		</div>
@@ -336,7 +356,7 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
-      <div class='l_main'>
+      <div class='l_main no_sidebar'>
   
 
   
@@ -353,7 +373,7 @@
   
     <h1 class="title">
       <a href="/tools/base64.html">
-        base64
+        base64加密/解密
       </a>
     </h1>
   
@@ -382,7 +402,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-08-16</p>
+    <p>2019-08-08</p>
   </a>
 </div>
 
@@ -426,15 +446,32 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <script type="text/javascript">
+          <style>
+    p {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    textarea.input {
+        position: relative;
+        left: 0%;
+        top: 0%;
+        margin: 0%;
+        height: 210px;
+        width: 720px;
+    }
+    textarea.output {
+        position: relative;
+        left: 0%;
+        top: auto;
+        margin: 0%;
+        height: 210px;
+        width: 720px;
+    }
+</style>
+<script type="text/javascript">
 //base64加密 解密
-
-/* //1.加密  
-var result = Base.encode('125中文');  //--> "MTI15Lit5paH"
-
-//2.解密  
-var result2 = Base.decode(result); //--> '125中文'
-*/
+//var result = Base.encode('125中文');  --> "MTI15Lit5paH"
+//var result2 = Base.decode(result); --> '125中文'
 
 ~(function(root, factory) {
   if (typeof define === "function" && define.amd) {
@@ -544,10 +581,36 @@ var result2 = Base.decode(result); //--> '125中文'
     var Base = new Base64();
     return Base;
 }));
-alert(Base.encode('125中文'));
+//alert(Base.encode('125中文'));
 </script>
-<p><textarea rows="3" cols="20" style="left: 0%"></textarea><br><textarea rows="3" cols="20" style="left: 50%"></textarea></p>
-
+<p><textarea rows="3" cols="20" class="input" id="input" placeholder="在此输入你要加密的明文或要解密的密文"></textarea></p>
+<div>
+    <button onclick="javascript:enc()">加密</button>
+    <button onclick="javascript:dec()">解密</button>
+    <button id="copybutton" class="btn" data-clipboard-target="#output">复制结果</button>
+</div>
+<textarea rows="3" cols="20" class="output" id="output" placeholder="这里会输出结果"></textarea>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    function enc() {
+        var text=document.getElementById("input").value;
+        document.getElementById("output").value=Base.encode(text);
+    }
+    function dec() {
+        var code=document.getElementById("input").value;
+        document.getElementById("output").value=Base.decode(code);
+    }
+    var result=document.getElementById("output").value;
+    var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function(e) {
+        alert("复制成功");
+        e.clearSelection();
+    });
+    clipboard.on('error', function(e) {
+        alert("复制失败");
+        e.clearSelection();
+    });
+</script>
         </div>
         
         
@@ -1091,7 +1154,7 @@ alert(Base.encode('125中文'));
     
     appId: "PfF2OtnDuJwoozF7wgHYSmJD-MdYXbMMI",
     appKey: "VHVDp2bfjzMCVTHB9lV4iVkf",
-    placeholder: "快来评论吧~",
+    placeholder: "这个工具好用吗?快来资瓷作者或提出建议吧!",
     pageSize:'10',
     avatar:'identicon',
     lang:'zh-cn',
