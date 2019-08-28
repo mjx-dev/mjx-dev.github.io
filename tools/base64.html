@@ -446,7 +446,9 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <style>
+          <script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/core.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/enc-base64.js"></script>
+<style>
     p {
         margin-top: 0%;
         margin-bottom: 0%;
@@ -468,9 +470,6 @@
         width: 720px;
     }
 </style>
-<script type="text/javascript">
-~(function(root,factory){if(typeof define==="function"&&define.amd){define([],factory)}else if(typeof module==="object"&&module.exports){module.exports=factory()}else{root.Base=factory()}}(this,function(){'use strict';function Base64(){this._keyStr="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="}Base64.prototype.encode=function(input){var output="",chr1,chr2,chr3,enc1,enc2,enc3,enc4,i=0;input=this._utf8_encode(input);while(i<input.length){chr1=input.charCodeAt(i++);chr2=input.charCodeAt(i++);chr3=input.charCodeAt(i++);enc1=chr1>>2;enc2=((chr1&3)<<4)|(chr2>>4);enc3=((chr2&15)<<2)|(chr3>>6);enc4=chr3&63;if(isNaN(chr2)){enc3=enc4=64}else if(isNaN(chr3)){enc4=64}output=output+this._keyStr.charAt(enc1)+this._keyStr.charAt(enc2)+this._keyStr.charAt(enc3)+this._keyStr.charAt(enc4)}return output}Base64.prototype.decode=function(input){var output="",chr1,chr2,chr3,enc1,enc2,enc3,enc4,i=0;input=input.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(i<input.length){enc1=this._keyStr.indexOf(input.charAt(i++));enc2=this._keyStr.indexOf(input.charAt(i++));enc3=this._keyStr.indexOf(input.charAt(i++));enc4=this._keyStr.indexOf(input.charAt(i++));chr1=(enc1<<2)|(enc2>>4);chr2=((enc2&15)<<4)|(enc3>>2);chr3=((enc3&3)<<6)|enc4;output=output+String.fromCharCode(chr1);if(enc3!=64){output=output+String.fromCharCode(chr2)}if(enc4!=64){output=output+String.fromCharCode(chr3)}}output=this._utf8_decode(output);return output}Base64.prototype._utf8_encode=function(string){string=string.replace(/\r\n/g,"\n");var utftext="";for(var n=0;n<string.length;n++){var c=string.charCodeAt(n);if(c<128){utftext+=String.fromCharCode(c)}else if((c>127)&&(c<2048)){utftext+=String.fromCharCode((c>>6)|192);utftext+=String.fromCharCode((c&63)|128)}else{utftext+=String.fromCharCode((c>>12)|224);utftext+=String.fromCharCode(((c>>6)&63)|128);utftext+=String.fromCharCode((c&63)|128)}}return utftext}Base64.prototype._utf8_decode=function(utftext){var string="",i=0,c=0,c1=0,c2=0,c3=0;while(i<utftext.length){c=utftext.charCodeAt(i);if(c<128){string+=String.fromCharCode(c);i++}else if((c>191)&&(c<224)){c2=utftext.charCodeAt(i+1);string+=String.fromCharCode(((c&31)<<6)|(c2&63));i+=2}else{c2=utftext.charCodeAt(i+1);c3=utftext.charCodeAt(i+2);string+=String.fromCharCode(((c&15)<<12)|((c2&63)<<6)|(c3&63));i+=3}}return string}var Base=new Base64();return Base}));
-</script>
 <p><textarea rows="3" cols="20" class="input" id="input" placeholder="在此输入你要加密的明文或要解密的密文"></textarea></p>
 <div>
     <button onclick="javascript:enc()">加密</button>
@@ -482,11 +481,13 @@
 <script>
     function enc() {
         var text=document.getElementById("input").value;
-        document.getElementById("output").value=Base.encode(text);
+        var str=CryptoJS.enc.Utf8.parse(text);
+        document.getElementById("output").value=CryptoJS.enc.Base64.stringify(str);
     }
     function dec() {
         var code=document.getElementById("input").value;
-        document.getElementById("output").value=Base.decode(code);
+        var words = CryptoJS.enc.Base64.parse(code);
+        document.getElementById("output").value=words.toString(CryptoJS.enc.Utf8);
     }
     var result=document.getElementById("output").value;
     var clipboard = new ClipboardJS('.btn');

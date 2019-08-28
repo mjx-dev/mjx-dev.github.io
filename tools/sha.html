@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>工具箱(beta) | mjx&#39;s blog</title>
+  <title>sha加密(beta) | mjx&#39;s blog</title>
   
   <meta name="keywords" content="mjx,blog,技术分享,博客">
   
@@ -156,7 +156,7 @@
 
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header no_sidebar pure">
   <div id="loading-bar-wrapper">
     <div id="loading-bar" class="pure"></div>
   </div>
@@ -272,8 +272,6 @@
 			<ul class='switcher h-list'>
 				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
         
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
-        
 			</ul>
 		</div>
 	</div>
@@ -358,7 +356,7 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
-      <div class='l_main'>
+      <div class='l_main no_sidebar'>
   
 
   
@@ -375,7 +373,7 @@
   
     <h1 class="title">
       <a href="/tools/sha.html">
-        工具箱(beta)
+        sha加密(beta)
       </a>
     </h1>
   
@@ -448,7 +446,22 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <style>
+          <script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/core.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/x64-core.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/sha1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/hmac-sha1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/sha3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/hmac-sha3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/hmac-sha256.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/sha256.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/sha224.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/hmac-sha224.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/hmac-sha512.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/sha512.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/sha384.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/hmac-sha384.js"></script>
+
+<style>
     p {
         margin-top: 0%;
         margin-bottom: 0%;
@@ -470,69 +483,50 @@
         width: 720px;
     }
 </style>
-<script>
-    function encodeUTF8(s) {
-  var i, r = [], c, x;
-  for (i = 0; i < s.length; i++)
-    if ((c = s.charCodeAt(i)) < 0x80) r.push(c);
-    else if (c < 0x800) r.push(0xC0 + (c >> 6 & 0x1F), 0x80 + (c & 0x3F));
-    else {
-      if ((x = c ^ 0xD800) >> 10 == 0) //对四字节UTF-16转换为Unicode
-        c = (x << 10) + (s.charCodeAt(++i) ^ 0xDC00) + 0x10000,
-          r.push(0xF0 + (c >> 18 & 0x7), 0x80 + (c >> 12 & 0x3F));
-      else r.push(0xE0 + (c >> 12 & 0xF));
-      r.push(0x80 + (c >> 6 & 0x3F), 0x80 + (c & 0x3F));
-    };
-  return r;
-}
-// 字符串加密成 hex 字符串
-function sha1(s) {
-  var data = new Uint8Array(encodeUTF8(s))
-  var i, j, t;
-  var l = ((data.length + 8) >>> 6 << 4) + 16, s = new Uint8Array(l << 2);
-  s.set(new Uint8Array(data.buffer)), s = new Uint32Array(s.buffer);
-  for (t = new DataView(s.buffer), i = 0; i < l; i++)s[i] = t.getUint32(i << 2);
-  s[data.length >> 2] |= 0x80 << (24 - (data.length & 3) * 8);
-  s[l - 1] = data.length << 3;
-  var w = [], f = [
-    function () { return m[1] & m[2] | ~m[1] & m[3]; },
-    function () { return m[1] ^ m[2] ^ m[3]; },
-    function () { return m[1] & m[2] | m[1] & m[3] | m[2] & m[3]; },
-    function () { return m[1] ^ m[2] ^ m[3]; }
-  ], rol = function (n, c) { return n << c | n >>> (32 - c); },
-    k = [1518500249, 1859775393, -1894007588, -899497514],
-    m = [1732584193, -271733879, null, null, -1009589776];
-  m[2] = ~m[0], m[3] = ~m[1];
-  for (i = 0; i < s.length; i += 16) {
-    var o = m.slice(0);
-    for (j = 0; j < 80; j++)
-      w[j] = j < 16 ? s[i + j] : rol(w[j - 3] ^ w[j - 8] ^ w[j - 14] ^ w[j - 16], 1),
-        t = rol(m[0], 5) + f[j / 20 | 0]() + m[4] + w[j] + k[j / 20 | 0] | 0,
-        m[1] = rol(m[1], 30), m.pop(), m.unshift(t);
-    for (j = 0; j < 5; j++)m[j] = m[j] + o[j] | 0;
-  };
-  t = new DataView(new Uint32Array(m).buffer);
-  for (var i = 0; i < 5; i++)m[i] = t.getUint32(i << 2);
-  var hex = Array.prototype.map.call(new Uint8Array(new Uint32Array(m).buffer), function (e) {
-    return (e < 16 ? "0" : "") + e.toString(16);
-  }).join("");
-  return hex;
-}
-</script>
 <p><textarea rows="3" cols="20" class="input" id="input" placeholder="在此输入你要加密的明文或要解密的密文"></textarea></p>
 <div>
     <button onclick="javascript:enc(1)">sha1加密</button>
-    <button onclick="javascript:enc()"></button>
+    <button onclick="javascript:enc(3)">sha3加密</button>
+    <button onclick="javascript:enc(224)">sha224加密</button>
+    <button onclick="javascript:enc(256)">sha256加密</button>
+    <button onclick="javascript:enc(384)">sha384加密</button>
+    <button onclick="javascript:enc(512)">sha512加密</button>
     <button id="copybutton" class="btn" data-clipboard-target="#output">复制结果</button>
+    <br><input type="checkbox" id="passcheck"><input type="password" id="pass">
 </div>
 <textarea rows="3" cols="20" class="output" id="output" placeholder="这里会输出结果"></textarea>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
+    function is_hmac() {
+      if($("#passcheck").attr("checked")==true&&$("#input").val()!=''){
+        return true;
+      }else{
+        return false;
+      }
+    }
     function enc(type) {
         var text=document.getElementById("input").value;
+        if(is_hmac()==false) {
         if(type==1) {
-            document.getElementById("output").value=sha1(text);
-        }//else if(type==2)
+            document.getElementById("output").value=CryptoJS.SHA1(text);
+        }else if(type==3) {document.getElementById("output").value=CryptoJS.SHA3(text);}
+        else if(type==224) {document.getElementById("output").value=CryptoJS.SHA224(text);}
+        else if(type==256) {document.getElementById("output").value=CryptoJS.SHA256(text);}
+        else if(type==384) {document.getElementById("output").value=CryptoJS.SHA384(text);}
+        else if(type==512) {document.getElementById("output").value=CryptoJS.SHA512(text);}
+        else {console.error("参数错误");}
+      }
+      else if(is_hmac()==true) {
+        var password=document.getElementById("pass").value;
+        if(type==1) {
+            document.getElementById("output").value=CryptoJS.SHA1(text);
+        }else if(type==3) {document.getElementById("output").value=CryptoJS.HmacSHA3(text,password);}
+        else if(type==224) {document.getElementById("output").value=CryptoJS.HmacSHA224(text,password);}
+        else if(type==256) {document.getElementById("output").value=CryptoJS.HmacSHA256(text,password);}
+        else if(type==384) {document.getElementById("output").value=CryptoJS.HmacSHA384(text,password);}
+        else if(type==512) {document.getElementById("output").value=CryptoJS.HmacSHA512(text,password);}
+        else {console.error("参数错误");}
+      }
     }
     var result=document.getElementById("output").value;
     var clipboard = new ClipboardJS('.btn');
