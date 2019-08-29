@@ -462,7 +462,7 @@ function seed_generator()
     }if($("#symbol").prop("checked")==true)  {
         seed.push('!','@','#','$','%','^','&','*','(',')','~','<','>');
     }if($("#letter").prop("checked")==false&&$("#num").prop("checked")==false&&$("#symbol").prop("checked")==false) {
-        alert("error");
+        alert("请勾选任意选项!");
         return false;
     }
     return seed;
