@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://mjx.js.org/2019/07/30/hello-world/</loc>
+    <lastmod>2019-08-30</lastmod>
+  </url>  <url>
     <loc>https://mjx.js.org/2019/08/18/6-visual-code-markdown/</loc>
     <lastmod>2019-08-27</lastmod>
   </url>  <url>
     <loc>https://mjx.js.org/2019/08/20/7-markdown/</loc>
-    <lastmod>2019-08-27</lastmod>
-  </url>  <url>
-    <loc>https://mjx.js.org/2019/07/30/hello-world/</loc>
     <lastmod>2019-08-27</lastmod>
   </url>  <url>
     <loc>https://mjx.js.org/2019/08/18/5-welcome-ip/</loc>
