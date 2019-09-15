@@ -456,14 +456,14 @@
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
           <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>现在网上流行一些个性化签名档,我查阅资料,自己在基础上改了一段代码,与大家分享(特别感谢搜狐的api),效果如下</p>
-<p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/blog/5-cover.png" alt="cover"></p>
+<p><img src="https://dev.tencent.com/u/mjxdev/p/assets/git/raw/master/website/img/blog/5-cover.png" alt="cover"></p>
 <a id="more"></a>
 
 <h2 id="制作代码"><a href="#制作代码" class="headerlink" title="制作代码"></a>制作代码</h2><p>复制以下代码</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://pv.sohu.com/cityjson?ie=utf-8"</span>&gt;</span><span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml">var getOSAndBrowser=function()&#123;var os=navigator.platform;var userAgent=navigator.userAgent;var info="";var tempArray="";if(os.indexOf("Win")&gt;-1)&#123;if(userAgent.indexOf("Windows NT 5.0")&gt;-1)&#123;info+="Win2000"&#125;else if(userAgent.indexOf("Windows NT 5.1")&gt;-1)&#123;info+="WinXP"&#125;else if(userAgent.indexOf("Windows NT 5.2")&gt;-1)&#123;info+="Win2003"&#125;else if(userAgent.indexOf("Windows NT 6.0")&gt;-1)&#123;info+="WindowsVista"&#125;else if(userAgent.indexOf("Windows NT 6.1")&gt;-1||userAgent.indexOf("Windows 7")&gt;-1)&#123;info+="Win7"&#125;else if(userAgent.indexOf("Windows NT 6.2")&gt;-1||userAgent.indexOf("Windows 8")&gt;-1)&#123;info+="Win8"&#125;else if(userAgent.indexOf("Windows NT 6.3")&gt;-1||userAgent.indexOf("Windows 8.1")&gt;-1)&#123;info+="Win8.1"&#125;else if(userAgent.indexOf("Windows NT 10.0")&gt;-1||userAgent.indexOf("Windows 10")&gt;-1)&#123;info+="Win10"&#125;else&#123;info+="Other"&#125;&#125;else if(os.indexOf("Mac")&gt;-1)&#123;info+="Mac"&#125;else if(os.indexOf("X11")&gt;-1)&#123;info+="Unix"&#125;else if(os.indexOf("Linux")&gt;-1)&#123;info+="Linux"&#125;else&#123;info+="Other"&#125;info+="/";var isOpera=userAgent.indexOf("Opera")&gt;-1;var isIE=userAgent.indexOf("compatible")&gt;-1&amp;&amp;userAgent.indexOf("MSIE")&gt;-1&amp;&amp;!isOpera;var isEdge=userAgent.toLowerCase().indexOf("edge")&gt;-1&amp;&amp;!isIE;var isIE11=(userAgent.toLowerCase().indexOf("trident")&gt;-1&amp;&amp;userAgent.indexOf("rv")&gt;-1);if(/[Ff]irefox(\/\d+\.\d+)/.test(userAgent))&#123;tempArray=/([Ff]irefox)\/(\d+\.\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]&#125;else if(isIE)&#123;var version="";var reIE=new RegExp("MSIE (\\d+\\.\\d+);");reIE.test(userAgent);var fIEVersion=parseFloat(RegExp["$1"]);if(fIEVersion==7)&#123;version="IE7"&#125;else if(fIEVersion==8)&#123;version="IE8"&#125;else if(fIEVersion==9)&#123;version="IE9"&#125;else if(fIEVersion==10)&#123;version="IE10"&#125;else&#123;version="0"&#125;info+=version&#125;else if(isEdge)&#123;info+="Edge"&#125;else if(isIE11)&#123;info+="IE11"&#125;else if(/[Cc]hrome\/\d+/.test(userAgent))&#123;tempArray=/([Cc]hrome)\/(\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]&#125;else if(/[Vv]ersion\/\d+\.\d+\.\d+(\.\d)* *[Ss]afari/.test(userAgent))&#123;tempArray=/[Vv]ersion\/(\d+\.\d+\.\d+)(\.\d)* *([Ss]afari)/.exec(userAgent);info+=tempArray[3]+tempArray[1]&#125;else if(/[Oo]pera.+[Vv]ersion\/\d+\.\d+/.test(userAgent))&#123;tempArray=/([Oo]pera).+[Vv]ersion\/(\d+)\.\d+/.exec(userAgent);info+=tempArray[1]+tempArray[2]&#125;else&#123;info+="unknown"&#125;return info&#125;;document.write("欢迎,来自"+returnCitySN["cname"]+"的朋友");document.write("<span class="tag">&lt;<span class="name">br</span>&gt;</span>您的ip:"+returnCitySN["cip"]);document.write("<span class="tag">&lt;<span class="name">br</span>&gt;</span>您使用的是"+getOSAndBrowser());</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="部署代码"><a href="#部署代码" class="headerlink" title="部署代码"></a>部署代码</h2><p>粘贴到合适位置即可<br>比如创建一个plain框,把代码粘贴到body后即可<b style="color:red">(body后有一空格)</b></p>
-<p><img src="https://cdn.jsdelivr.net/gh/mjx-dev/assets@master/website/img/blog/5-1.png" alt="放置代码"></p>
+<p><img src="https://dev.tencent.com/u/mjxdev/p/assets/git/raw/master/website/img/blog/5-1.png" alt="放置代码"></p>
 
         </div>
         
@@ -484,10 +484,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-08-27T08:53:25+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-15T14:46:22+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年8月27日</p>
+    <p>最后更新于 2019年9月15日</p>
   </a>
 </div>
 
